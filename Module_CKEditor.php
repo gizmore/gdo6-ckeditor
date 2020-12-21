@@ -8,6 +8,8 @@ final class Module_CKEditor extends GDO_Module
 {
     public function getDependencies() { return ['JQuery']; }
     
+    public function thirdPartyFolders() { return ['/ckeditor5/']; }
+    
     public function getClasses()
     {
         return [
