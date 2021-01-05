@@ -10,6 +10,8 @@ final class Module_CKEditor extends GDO_Module
     
     public function thirdPartyFolders() { return ['/ckeditor5/']; }
     
+    public function onLoadLanguage() { return $this->loadLanguage('lang/ckeditor'); }
+    
     public function getClasses()
     {
         return [
