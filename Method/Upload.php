@@ -24,7 +24,7 @@ final class Upload extends Method
         ])->insert();
         
         $json = [ 'url' => $ckfile->getHREF() ];
-        Website::renderJSON($json);
+        Website::outputJSON($json);
     }
 
     
