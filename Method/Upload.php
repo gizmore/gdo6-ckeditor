@@ -1,8 +1,8 @@
 <?php
 namespace GDO\CKEditor\Method;
 
+use GDO\Core\GDT_Array;
 use GDO\Core\Method;
-use GDO\Core\Website;
 use GDO\File\GDT_File;
 use GDO\File\GDO_File;
 use GDO\Core\GDT_Response;
@@ -24,7 +24,7 @@ final class Upload extends Method
         ])->insert();
         
         $json = [ 'url' => $ckfile->getHREF() ];
-        Website::outputJSON($json);
+        return GDT_Array::makeWith($json);
     }
 
     
