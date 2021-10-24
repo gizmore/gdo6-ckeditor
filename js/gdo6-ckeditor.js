@@ -22,7 +22,7 @@ $(function() {
 //				uploadUrl: 'index.php?mo=CKEditor&me=Upload&command=QuickUpload&type=Images&responseType=json'
 //			},
 	        simpleUpload: {
-				uploadUrl: 'index.php?mo=CKEditor&me=Upload&ajax=1&fmt=json',
+				uploadUrl: 'index.php?mo=CKEditor&me=Upload&_ajax=1&_fmt=json',
 	            withCredentials: true,
 			},
 			image: {
