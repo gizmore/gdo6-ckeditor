@@ -34,14 +34,14 @@ final class Module_CKEditor extends GDO_Module
     
     public function onIncludeScripts()
     {
-        $this->addJavascript('ckeditor5/ckeditor.js');
+        $this->addJS('ckeditor5/ckeditor.js');
         $iso = strtolower(GDO_Language::current()->getISO());
         if ($iso != 'en')
         {
-            $this->addJavascript('ckeditor5/translations/'.$iso.'.js');
+            $this->addJS('ckeditor5/translations/'.$iso.'.js');
         }
         
-        $this->addJavascript('js/gdo6-ckeditor.js');
+        $this->addJS('js/gdo6-ckeditor.js');
     }
     
 }
